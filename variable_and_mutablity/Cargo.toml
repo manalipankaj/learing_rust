@@ -1,0 +1,6 @@
+[package]
+name = "variable_and_mutablity"
+version = "0.1.0"
+authors = ["manalipankaj <pankaj.manali@gmail.com>"]
+
+[dependencies]
