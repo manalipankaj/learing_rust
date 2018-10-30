@@ -14,4 +14,8 @@ fn main() {
     let y = y + 1;
     let y = y * 2;
     println!("Value is x {}", y);
+
+    //Floating-point
+    let x = 2.0; // f64
+    let y: f32 = 3.0; // f32
 }
