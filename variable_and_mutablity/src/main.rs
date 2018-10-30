@@ -38,4 +38,9 @@ fn main() {
     //Boolean type
     let a = true;
     let b :bool = false;
+
+    // char
+    let c = 'z';
+    let z = 'ℤ';
+    let heart_eyed_cat = '😻';
 }
