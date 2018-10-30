@@ -46,6 +46,13 @@ fn main() {
 
     //Tuple
     let tup: (i32, f64, u8) = (500, 6.4, 1);
-    let (x ,y, z) = tup;
+    let (x ,y, z) = tup; //Destructuring
     println!("Values are {} {} {}", x, y, z);
+    println!("Float value is {}", tup.1)
+
+    //Arrays
+    let a = [1,2,3,4,5];
+    let x [i32; 5] = [1,2,3,4,5];
+    let first = a[0] //Accessing elements
+    
 }
