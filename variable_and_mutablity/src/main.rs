@@ -18,4 +18,20 @@ fn main() {
     //Floating-point
     let x = 2.0; // f64
     let y: f32 = 3.0; // f32
+
+    //Numberic oprations
+    // addition
+    let sum = 2+4; //6
+
+    // subtrations
+    let subtract = 10-4; //6
+
+    // multiplication
+    let product = 2*4; //8
+
+    // division
+    let devision = 10/5; //2
+
+    // remainder
+    let remainder = 10%3; //1
 }
