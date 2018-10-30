@@ -34,4 +34,8 @@ fn main() {
 
     // remainder
     let remainder = 10%3; //1
+
+    //Boolean type
+    let a = true;
+    let b :bool = false;
 }
