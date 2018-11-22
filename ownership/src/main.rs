@@ -1,6 +1,8 @@
 fn main() {
     println!("Hello, world!");
     ownership();
+    let len = calculate_length(String::from("Hello"));
+    println!("lenght of {} is {}",len.0, len.1);
 }
 
 fn ownership() {
@@ -27,4 +29,10 @@ fn ownership() {
     let a = 5;
     let b = a;
     println!("a is {} and b is {}", a, b);  // This works because interger is stored in stack memory
+}
+
+fn calculate_length(s: String) -> (String, usize) {
+    let length = s.len(); // len() returns the length of a String
+
+    (s, length)
 }
