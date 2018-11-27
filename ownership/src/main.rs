@@ -9,7 +9,11 @@ fn main() {
     println!("length of {} is {}", s1, len2 );
 
     let mut newStr = String::from("Hello");
+    // let r1 = &mut newStr;  //Will get error at next borrow statement, you cannot borrow refference more than once
+    // let r2 = &newStr;    //Error, you cannot have mutable refference when you have immutable refference
+
     change(&mut newStr);
+    // change2(&mut newStr);
 }
 
 fn ownership() {
@@ -48,5 +52,9 @@ fn calculate_length_passing_ref(s: &String) -> usize {
 }
 
 fn change(some_string: &mut String) {
+    some_string.push_str(", world");
+}
+
+fn change2(some_string: &mut String) {
     some_string.push_str(", world");
 }
