@@ -7,6 +7,9 @@ fn main() {
     let s1 = String::from("Hello");
     let len2 = calculate_length_passing_ref( &s1 );
     println!("length of {} is {}", s1, len2 );
+
+    let mut newStr = String::from("Hello");
+    change(&mut newStr);
 }
 
 fn ownership() {
@@ -40,7 +43,10 @@ fn calculate_length(s: String) -> (String, usize) {
 
     (s, length)
 }
-
 fn calculate_length_passing_ref(s: &String) -> usize {
     s.len()
+}
+
+fn change(some_string: &mut String) {
+    some_string.push_str(", world");
 }
